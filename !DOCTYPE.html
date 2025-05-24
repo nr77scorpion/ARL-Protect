@@ -1,22 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>O Teu Nome | Portefólio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARL Protect | Digital & Cibersegurança</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <main class="container">
     <div class="content">
-      <h1>O Teu Nome</h1>
-      <p>Consultoria | Estratégia Digital | Cibersegurança</p>
-      <div class="links">
-        <a href="mailto:teuemail@example.com">Email</a>
-        <a href="https://www.linkedin.com/in/teulink" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/teuinsta" target="_blank">Instagram</a>
+      <h1 class="fade-in">ARL Protect</h1>
+      <p class="fade-in delay-1">Consultoria Digital · Cibersegurança · Formação</p>
+      <div class="links fade-in delay-2">
+        <a href="mailto:arlp@exemplo.com">Email</a>
+        <a href="https://www.linkedin.com/in/arlp" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/arl.protect" target="_blank">Instagram</a>
       </div>
     </div>
   </main>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: backgroundFade 8s ease-in-out infinite alternate;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.25rem;
+      color: #cccccc;
+      margin-bottom: 2rem;
+    }
+
+    .links a {
+      margin: 0 1rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      border-bottom: 1px solid #ffffff;
+      color: #00ffe1;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.8s;
+    }
+
+    .delay-2 {
+      animation-delay: 1.6s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes backgroundFade {
+      0% { background-color: #0a0a0a; }
+      100% { background-color: #1a1a1a; }
+    }
+  </style>
 </body>
 </html>
