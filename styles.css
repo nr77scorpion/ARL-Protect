@@ -1,0 +1,47 @@
+/* Estilo base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #cccccc;
+}
+
+.links a {
+  margin: 0 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  border-bottom: 1px solid #ffffff;
+}
